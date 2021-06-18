@@ -1,0 +1,28 @@
+
+block content
+	.welcome-section
+		section.hero
+			.container.hero__container
+				header.header
+					a.logo(href="#") BA
+					nav.menu
+						-var menuItems = ["Обо мне","Навыки","Работы","Отзывы"];
+						ul.menu__list
+							each item in menuItems
+								li.menu__item
+									a(href="#").menu__link #{item}
+
+					-var socials = ["insta","vk","github","envelope"];
+					ul.socials
+						each item in socials
+							li.socials__item
+								a(href="#").socials__Link
+									+icon(item,"socials__icon")
+
+				.userinfo
+					.userinfo__title Личный сайт #[br] веб разработчика
+					.userinfo__name Владимир Астраханов
+
+				.hero__bottom-buttons
+					button.scroll-down-btn Скролл
+					img(src="~images/content/scroll.png")
