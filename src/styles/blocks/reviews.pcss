@@ -1,3 +1,17 @@
+.reviews-section {
+	background: url("~images/content/quote-bg.png") center top / cover no-repeat ;
+	height:694px;
+}
+
+.section-title {
+	font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 49px;
+color: #FFFFFF;
+}
+
 .slider__header {
 	display: flex;
 	margin-bottom: 95px;
@@ -13,12 +27,61 @@
 
 .slider__content {
 	display: flex;
+	padding-right: 13%;
 }
 
 .slider__item {
+	flex-basis:346px;
 	width:50%;
-	margin-right: 20px;
+	margin-right: 60px;
 	&:last-child {
 		margin-right: 0;
 	}
+}
+
+.user-display {
+	display: flex;
+	justify-content:start ;
+	padding-top: 30px;
+}
+
+.user-display-vs {
+	display: flex;
+	justify-content:start ;
+	padding-top: 59px;
+}
+
+
+.user-display__data {
+padding-top: 10px;
+	padding-left: 30px;
+}
+
+.user-display__name {
+	color: #FFFFFF;
+	font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+}
+
+.user-display__occ{
+	padding-top: 12px;
+	font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+color: rgba(255, 255, 255, 0.5);
+}
+
+.quote__text {
+	
+	font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 30px;
+color: rgba(255, 255, 255, 0.6);
 }
