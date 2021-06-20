@@ -1,4 +1,9 @@
 
+.values-box {
+	display: flex;
+	flex-direction:column;
+}
+
 .values{
 	display: flex;
 }
@@ -30,16 +35,18 @@ line-height: 30px;
 }
 
 .values__widget {
-	max: width 750px;
-
+	flex-basis: width 750px;
+	margin-left: auto;
 }
 
 .skills {
-	min-width: 761px;
+
+	max-width: 750px;
 }
 
 .skills-row__title {
 	padding-top: 53px;
+	padding-bottom: 40px;
 	color:#fff;
 	font-family: Open Sans;
 font-style: normal;
@@ -60,6 +67,10 @@ line-height: 33px;
 	position: relative;
 	width: 132px;
 	height: 132px;
+	padding-right: 66px;
+	&:last-child {
+		padding-right: 0;
+	}
 }
 
 .skill__circle {

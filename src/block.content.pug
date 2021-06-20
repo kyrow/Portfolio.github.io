@@ -48,7 +48,7 @@ block content
 									td.user__data-content #{item[1]}
 				.about__content
 					.about__desc Привет, меня зовут
-					.about__title Владимир Астраханов
+					.about__title Александр Хан
 					.about__text-info 	
 						p Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
 					.about__ps 
@@ -57,34 +57,35 @@ block content
 	.middle-section
 		section.values
 			+image("content/Arms.png","arms__avatar-pic")
-			.container
-				.values__title
-					.values__title-text Чем я могу быть полезен Вам
-					.values__content 
-						p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
-				.values__widget 
-					- 
-						var skillsCategories = [
-							["Frontend",["HTML","CSS","javascript","vue"]],
-							["Workflow",["GIT","Terminal","Gulp","Webpack"]],
-						];
+			.container 
+				.values-box
+					.values__title
+						.values__title-text Чем я могу быть полезен Вам
+						.values__content 
+							p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+					.values__widget 
+						- 
+							var skillsCategories = [
+								["Frontend",["HTML","CSS","javascript","vue"]],
+								["Workflow",["GIT","Terminal","Gulp","Webpack"]],
+							];
 
-					ul.skills 
-						each category in skillsCategories 
-							li.skills__item 
-								.skills-row
-									.skills-row__title #{category[0]} 
-									ul.skills-row__list 
-										each skill in category[1] 
-											li.skills-row__item 
-												.skill
-													svg(viewBox="0 0 100 100").skill__circle-shape
-														circle(cx="50" cy="50" r="40").skill__circle.skill__circle--layer--under
-														circle(cx="50" cy="50" r="40" stroke="url(#gradient)" transform="rotate(180 50 50)").skill__circle.skill__circle--layer--above
-														linearGradient(id="gradient" x1="0%" y1="0%" x2="100%" y2="0%")
-															stop(offset="0%" stop-color='#D0731B')
-															stop(offset="100%" stop-color='#DC9322')
-													.skill__title #{skill}
+						ul.skills 
+							each category in skillsCategories 
+								li.skills__item 
+									.skills-row
+										.skills-row__title #{category[0]} 
+										ul.skills-row__list 
+											each skill in category[1] 
+												li.skills-row__item 
+													.skill
+														svg(viewBox="0 0 100 100").skill__circle-shape
+															circle(cx="50" cy="50" r="40").skill__circle.skill__circle--layer--under
+															circle(cx="50" cy="50" r="40" stroke="url(#gradient)" transform="rotate(180 50 50)").skill__circle.skill__circle--layer--above
+															linearGradient(id="gradient" x1="0%" y1="0%" x2="100%" y2="0%")
+																stop(offset="0%" stop-color='#D0731B')
+																stop(offset="100%" stop-color='#DC9322')
+														.skill__title #{skill}
 	.works-section 
 		section.works 
 			.container
@@ -145,7 +146,7 @@ block content
 									.user-display-vs 
 										.user-display__avatar 	
 											.user-display__avatar-style 
-												+image("content/Dmitriy.png","user-display__pic")
+												+image("content/Vladimir.png","user-display__pic")
 										.user-display__data 
 											.user-display__name Владимир Сабанцев
 											.user-display__occ Преподаватель							
