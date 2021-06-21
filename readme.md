@@ -1,4 +1,3 @@
-permalink: /index.html
 #  Portfolio
 
 Хан Александр Максимович
