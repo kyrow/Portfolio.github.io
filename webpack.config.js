@@ -10,7 +10,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = (env, argv) => {
 	const isProductionBuild = argv.mode === "production";
-	const publicPath = "D:/Projects/Portfolio/vue-boilerplate/dist/";
+	const publicPath = "https://kyrow.github.io/Portfolio.github.io/";
 
 	const pcss = {
 		test: /\.(p|post|)css$/,
